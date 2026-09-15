@@ -1,0 +1,178 @@
+WORD FREQUENCIES
+play : 4
+player : 2
+playing : 3
+playful : 2
+code : 3
+coder : 2
+coding : 2
+computer : 3
+
+INITIAL SPLITS
+play -> ['p', '##l', '##a', '##y']
+player -> ['p', '##l', '##a', '##y', '##e', '##r']
+playing -> ['p', '##l', '##a', '##y', '##i', '##n', '##g']
+playful -> ['p', '##l', '##a', '##y', '##f', '##u', '##l']
+code -> ['c', '##o', '##d', '##e']
+coder -> ['c', '##o', '##d', '##e', '##r']
+coding -> ['c', '##o', '##d', '##i', '##n', '##g']
+computer -> ['c', '##o', '##m', '##p', '##u', '##t', '##e', '##r']
+
+INITIAL VOCABULARY
+##a
+##d
+##e
+##f
+##g
+##i
+##l
+##m
+##n
+##o
+##p
+##r
+##t
+##u
+##y
+c
+p
+
+WORDPIECE TRAINING
+
+Merge 1
+Best Pair : ('##m', '##p')
+Pair Frequency : 3
+Score : 0.333333
+New Token : ##mp
+
+Merge 2
+Best Pair : ('##i', '##n')
+Pair Frequency : 5
+Score : 0.2
+New Token : ##in
+
+Merge 3
+Best Pair : ('##in', '##g')
+Pair Frequency : 5
+Score : 0.2
+New Token : ##ing
+
+Merge 4
+Best Pair : ('##f', '##u')
+Pair Frequency : 2
+Score : 0.2
+New Token : ##fu
+
+Merge 5
+Best Pair : ('##mp', '##u')
+Pair Frequency : 3
+Score : 0.333333
+New Token : ##mpu
+
+Merge 6
+Best Pair : ('##mpu', '##t')
+Pair Frequency : 3
+Score : 0.333333
+New Token : ##mput
+
+Merge 7
+Best Pair : ('##e', '##r')
+Pair Frequency : 7
+Score : 0.1
+New Token : ##er
+
+Merge 8
+Best Pair : ('##d', '##e')
+Pair Frequency : 3
+Score : 0.142857
+New Token : ##de
+
+Merge 9
+Best Pair : ('##mput', '##er')
+Pair Frequency : 3
+Score : 0.142857
+New Token : ##mputer
+
+Merge 10
+Best Pair : ('##d', '##er')
+Pair Frequency : 2
+Score : 0.125
+New Token : ##der
+
+FINAL WORD SPLITS
+play -> ['p', '##l', '##a', '##y']
+player -> ['p', '##l', '##a', '##y', '##er']
+playing -> ['p', '##l', '##a', '##y', '##ing']
+playful -> ['p', '##l', '##a', '##y', '##fu', '##l']
+code -> ['c', '##o', '##de']
+coder -> ['c', '##o', '##der']
+coding -> ['c', '##o', '##d', '##ing']
+computer -> ['c', '##o', '##mputer']
+
+FINAL VOCABULARY
+##a
+##d
+##de
+##der
+##e
+##er
+##f
+##fu
+##g
+##i
+##in
+##ing
+##l
+##m
+##mp
+##mpu
+##mput
+##mputer
+##n
+##o
+##p
+##r
+##t
+##u
+##y
+c
+p
+
+Vocabulary Size : 27
+
+TEST TOKENIZATION
+Test Word : playing
+Tokens : ['p', '##l', '##a', '##y', '##ing']
+
+TOKEN ID MAPPING
+##a : 0
+##d : 1
+##de : 2
+##der : 3
+##e : 4
+##er : 5
+##f : 6
+##fu : 7
+##g : 8
+##i : 9
+##in : 10
+##ing : 11
+##l : 12
+##m : 13
+##mp : 14
+##mpu : 15
+##mput : 16
+##mputer : 17
+##n : 18
+##o : 19
+##p : 20
+##r : 21
+##t : 22
+##u : 23
+##y : 24
+[UNK] : 25
+c : 26
+p : 27
+
+Input Tokens : ['p', '##l', '##a', '##y', '##ing']
+Token IDs : [27, 12, 0, 24, 11]
